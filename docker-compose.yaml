@@ -1,62 +1,44 @@
-version: '3.8'
 services:
-  web:
-    container_name: web
-    build: .
-    environment:
-      DATABASE_URL: ${DATABASE_URL}
-      USE_SSL: ${USE_SSL}
-      OPTION_ALLOW_NEW_REGISTRATIONS: ${OPTION_ALLOW_NEW_REGISTRATIONS}
-      SMTP_AUTH_PASS: ${SMTP_AUTH_PASS}
-      SMTP_AUTH_USER: ${SMTP_AUTH_USER}
-      SMTP_FROM: ${SMTP_FROM}
-      SMTP_HOST: ${SMTP_HOST}
-      SMTP_PORT: ${SMTP_PORT}
-      SMTP_REQUIRE_TLS: ${SMTP_REQUIRE_TLS}
-    ports:
-      - "3000:3000"
-    # volumes:
-    #   - ./config:/app/config
-    restart: unless-stopped
-
-  postgres:
-    image: postgres:latest
-    container_name: postgres
-    environment:
-      POSTGRES_DB: ${DB_DATABASE}
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
+  # Database
+  db:
+    image: mysql:5.7
+    container_name: timeoff_db
     volumes:
-      - my-postgres-data:/var/lib/postgresql/data
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: kWtGMzj1G7U1DwAxRSq6Lv27DpVPVaoT9uLGvyy5
+      MYSQL_DATABASE: timeoffmanagement
+      MYSQL_USER: timeoff
+      MYSQL_PASSWORD: kWtGMzj1G7U1DwAxRSq6Lv27DpVPVaoT9uLGvyy5
     ports:
-      - "5432:5432"
+      - 3306:3306
+    networks:
+      - timeoffnetwork
+  # timeoff-management
+  timeoff:
+    depends_on:
+      - db
+    build: .
+    container_name: timeoff
+    restart: always
+    volumes:
+      - type: bind
+        source: ./db.json
+        target: /timeoff/config/db.json
+      - type: bind
+        source: ./app.json
+        target: /timeoff/config/app.json
+    ports:
+      - 3000:3000
+    networks:
+      - tunnel
+      - timeoffnetwork
 
-  # mysql:
-  #   image: mysql:latest
-  #   container_name: mysql
-  #   environment:
-  #     MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASS}
-  #     MYSQL_DATABASE: ${DB_DATABASE}
-  #     MYSQL_USER: ${DB_USER}
-  #     MYSQL_PASSWORD: ${DB_PASSWORD}
-  #     MYSQL_ROOT_HOST: '%'
-  #   volumes:
-  #     - my-mysql-data:/var/lib/mysql
-  #   ports:
-  #     - "${DB_PORT}:3306"
-  #   command: --default-authentication-plugin=mysql_native_password
-
-  # admin:
-  #   image: phpmyadmin/phpmyadmin
-  #   container_name: admin
-  #   environment:
-  #     PMA_HOST: ${DB_HOST}
-  #     PMA_PORT: ${DB_PORT}
-  #   ports:
-  #     - "8080:80"
-  #   depends_on:
-  #     - mysql
+networks:
+  timeoffnetwork:
+  tunnel:
+    external: true
 
 volumes:
-  # my-mysql-data:
-  my-postgres-data:
+  db_data:
