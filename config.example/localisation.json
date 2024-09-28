@@ -11317,144 +11317,112 @@
       "name": "United Kingdom",
       "bank_holidays": [
         {
-          "date": "2018-01-01",
-          "name": "New Year's Day"
+          "name": "New Year’s Day",
+          "date": "2024-01-01"
         },
         {
-          "date": "2018-03-30",
-          "name": "Good Friday"
+          "name": "2nd January",
+          "date": "2024-01-02"
         },
         {
-          "date": "2018-04-01",
-          "name": "Easter Sunday"
+          "name": "Good Friday",
+          "date": "2024-03-29"
         },
         {
-          "date": "2018-04-02",
-          "name": "Easter Monday"
+          "name": "Early May bank holiday",
+          "date": "2024-05-06"
         },
         {
-          "date": "2018-05-07",
-          "name": "Early May bank holiday"
+          "name": "Spring bank holiday",
+          "date": "2024-05-27"
         },
         {
-          "date": "2018-05-28",
-          "name": "Spring bank holiday"
+          "name": "Summer bank holiday",
+          "date": "2024-08-05"
         },
         {
-          "date": "2018-12-25",
-          "name": "Christmas Day"
+          "name": "St Andrew’s Day",
+          "date": "2024-12-02"
         },
         {
-          "date": "2018-12-26",
-          "name": "Boxing Day"
+          "name": "Christmas Day",
+          "date": "2024-12-25"
         },
         {
-          "date": "2019-01-01",
-          "name": "New Year's Day"
+          "name": "Boxing Day",
+          "date": "2024-12-26"
         },
         {
-          "date": "2019-04-19",
-          "name": "Good Friday"
+          "name": "New Year’s Day",
+          "date": "2025-01-01"
         },
         {
-          "date": "2019-04-21",
-          "name": "Easter Sunday"
+          "name": "2nd January",
+          "date": "2025-01-02"
         },
         {
-          "date": "2019-04-22",
-          "name": "Easter Monday"
+          "name": "Good Friday",
+          "date": "2025-04-18"
         },
         {
-          "date": "2019-05-06",
-          "name": "Early May bank holiday"
+          "name": "Early May bank holiday",
+          "date": "2025-05-05"
         },
         {
-          "date": "2019-05-27",
-          "name": "Spring bank holiday"
+          "name": "Spring bank holiday",
+          "date": "2025-05-26"
         },
         {
-          "date": "2019-12-25",
-          "name": "Christmas Day"
+          "name": "Summer bank holiday",
+          "date": "2025-08-04"
         },
         {
-          "date": "2019-12-26",
-          "name": "Boxing Day"
+          "name": "St Andrew’s Day",
+          "date": "2025-12-01"
         },
         {
-          "date": "2020-01-01",
-          "name": "New Year's Day"
+          "name": "Christmas Day",
+          "date": "2025-12-25"
         },
         {
-          "date": "2020-04-10",
-          "name": "Good Friday"
+          "name": "Boxing Day",
+          "date": "2025-12-26"
         },
         {
-          "date": "2020-04-12",
-          "name": "Easter Sunday"
+          "name": "New Year’s Day",
+          "date": "2026-01-01"
         },
         {
-          "date": "2020-04-13",
-          "name": "Easter Monday"
+          "name": "2nd January",
+          "date": "2026-01-02"
         },
         {
-          "date": "2020-05-04",
-          "name": "Early May bank holiday"
+          "name": "Good Friday",
+          "date": "2026-04-03"
         },
         {
-          "date": "2020-05-25",
-          "name": "Spring bank holiday"
+          "name": "Early May bank holiday",
+          "date": "2026-05-04"
         },
         {
-          "date": "2020-12-25",
-          "name": "Christmas Day"
+          "name": "Spring bank holiday",
+          "date": "2026-05-25"
         },
         {
-          "date": "2020-12-26",
-          "name": "Boxing Day"
+          "name": "Summer bank holiday",
+          "date": "2026-08-03"
         },
         {
-          "date": "2020-12-28",
-          "name": "Boxing Day (substitute day)"
+          "name": "St Andrew’s Day",
+          "date": "2026-11-30"
         },
         {
-          "date": "2021-01-01",
-          "name": "New Year's Day"
+          "name": "Christmas Day",
+          "date": "2026-12-25"
         },
         {
-          "date": "2021-04-02",
-          "name": "Good Friday"
-        },
-        {
-          "date": "2021-04-04",
-          "name": "Easter Sunday"
-        },
-        {
-          "date": "2021-04-05",
-          "name": "Easter Monday"
-        },
-        {
-          "date": "2021-05-03",
-          "name": "Early May bank holiday"
-        },
-        {
-          "date": "2021-05-31",
-          "name": "Spring bank holiday"
-        },
-        {
-          "date": "2021-12-25",
-          "name": "Christmas Day"
-        },
-        {
-          "date": "2021-12-26",
-          "name": "Boxing Day"
-        },
-        {
-          "date": "2021-12-27",
-          "name": "Boxing Day (substitute day)"
-        },
-        {
-          "date": "2021-12-28",
-          "name": "Christmas Day (substitute day)"
+          "name": "Boxing Day",
+          "date": "2026-12-28"
         }
       ]
     },
