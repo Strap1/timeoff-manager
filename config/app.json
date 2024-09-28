@@ -1,7 +1,7 @@
 {
   "branding": {
-    "url": "http://app.timeoff.management",
-    "website": "http://timeoff.management"
+    "url": "https://to.anglo.uk.com",
+    "website": "https://to.anglo.uk.com"
   },
   "crypto_secret": "!2~`HswpPPLa22+=±§sdq qwe,appp qwwokDF_",
   "login": {
@@ -38,7 +38,7 @@
     }
   },
   "slack": {
-    "token": "Get your Web API token from you Slack admin page.",
+    "token": "Get your Web API token from your Slack admin page.",
     "icon_url": "The image can be hosted anywhere, but I would recoment to upload an icon to your Slack and use it's url.",
     "bot_name": "The display name for the messages being sent."
   },
